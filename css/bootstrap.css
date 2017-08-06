@@ -12,7 +12,7 @@ html {
 }
 body {
     margin: 0; 
-    background: url(http://data.whicdn.com/images/265903778/large.jpg) repeat center center fixed;
+    background: url(http://data.whicdn.com/images/265903778/large.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100%;
     
@@ -4282,7 +4282,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   height: 60px;
-  padding: 15px 15px;
+  padding: 20px 15px;
   font-size: 18px;
   line-height: 30px;
 }
