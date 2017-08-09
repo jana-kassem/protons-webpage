@@ -19,14 +19,15 @@
     
 }
 
-.wrapper {
+.wrapper{
     text-align: center;
-   
 }
+
 
 .button {
     position: absolute;
     top: 50%;
+    
 }
 
 .header{
@@ -41,174 +42,74 @@
     border-radius: 8px; 
 }
 
-
-.footer-distributed{
-	background-color: #292c2f;
-	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-    position: fixed;
-	width: 100%;
-    
-	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 5px 50px;
-	margin-top: 0px;
-    margin-bottom: 0px;
+/* FOOTER */
+footer { 
+    background:#394149; border-top:15px solid #31373e; padding:10px 0; color:#fff; width:100%; position:absolute; bottom:0; left:0; 
 }
 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
+footer .logo-nav {
+    width:100%; text-align:center;
 }
 
-/* Footer left */
-
-.footer-distributed .footer-left{
-	width: 40%;
+.logo{
+    font-family: "Lucida Handwriting";
+    font-size: 19px;
+    margin-left: 30px;
+    color: ghostwhite;
 }
 
-/* The company logo */
-
-.footer-distributed h3{
-	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
-	margin: 0;
+.jumbotron {
+    height: 200px;
 }
 
-.footer-distributed h3 span{
-	color:  #5383d3;
+footer .logo-nav .logo {
+    float:left; display:none;
 }
 
-/* Footer links */
-
-.footer-distributed .footer-links{
-	color:  #ffffff;
-	margin: 20px 0 12px;
-	padding: 0;
+footer .logo-nav .footer-nav {
+    margin-top:3px; display:inline-block;
 }
 
-.footer-distributed .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-	color:  inherit;
+.text{
+    margin-right: 15px;
 }
 
-.footer-distributed .footer-company-name{
-	color:  #8f9296;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
+footer .logo-nav .footer-nav li{
+    float:left; color:#fff; font-size:13px; font-weight:bold; border-right:1px solid #31373e; 
 }
 
-/* Footer Center */
-
-.footer-distributed .footer-center{
-	width: 35%;
+footer .logo-nav .footer-nav li a { 
+    display:block; padding:3px 15px;
 }
 
-.footer-distributed .footer-center i{
-	background-color:  #33383b;
-	color: #ffffff;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
+footer .logo-nav .footer-nav li a:hover { 
+    text-decoration:underline; 
 }
 
-.footer-distributed .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
+footer .social-text {
+    float:right; width:100%; padding:0 10px; 
 }
 
-.footer-distributed .footer-center p{
-	display: inline-block;
-	color: #ffffff;
-	vertical-align: middle;
-	margin:0;
+footer .social-text .social { 
+    float:none; margin-top:2px; text-align:center;
 }
 
-.footer-distributed .footer-center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
+footer .social-text .social img {
+    margin:0 2px;
 }
 
-.footer-distributed .footer-center p a{
-	color:  #5383d3;
-	text-decoration: none;;
+footer .social-text .text{ 
+    float:none; font-size:14px; margin-top:5px; text-align:center;
+}
+	
+@media (min-width: 400px) {
+	footer .social-text .social { float:left; }
+	footer .social-text .text { float:right; }
 }
 
-
-/* Footer Right */
-
-.footer-distributed .footer-right{
-	width: 20%;
-}
-
-.footer-distributed .footer-company-about{
-	line-height: 20px;
-	color:  #92999f;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
-}
-
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 20px;
-}
-
-.footer-distributed .footer-icons{
-	margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
-
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
-
-	margin-right: 3px;
-	margin-bottom: 5px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-
-	.footer-distributed{
-		font: bold 14px sans-serif;
-	}
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
-
+@media (min-width: 768px) {
+    footer .logo-nav { width:52%; float:left; }
+    footer .logo-nav .logo { display:block; }
+    footer .logo-nav .footer-nav { float:right; }
+	footer .social-text { width:47%; padding:0;  }
 }
