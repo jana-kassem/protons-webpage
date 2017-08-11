@@ -8,15 +8,14 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%; 
-  
 }
+
 body {
-    margin: 0; 
-    background: url(http://data.whicdn.com/images/265903778/large.jpg) no-repeat center center fixed;
+    background-color: aquamarine;
+    margin: 0;
     background-size: cover;
-    height: 100%;
-    
 }
+
 article,
 aside,
 details,
@@ -32,6 +31,7 @@ section,
 summary {
   display: block;
 }
+
 audio,
 canvas,
 progress,
